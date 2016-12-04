@@ -35,7 +35,4 @@ dependencies {
     compile 'com.squareup.picasso:picasso:2.5.2'
     compile 'com.android.support:design:24.2.1'
     testCompile 'junit:junit:4.12'
-    compile project(':slidelibrary')
-    compile files('libs/xUtils-3.1.14.jar')
-    compile files('libs/xutils-3.1.14-sources.jar')
 }
