@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/user_infomation"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#f3f3f3"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/user_head"
+            android:layout_width="76dp"
+            android:layout_height="76dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="20dp"
+            android:src="@mipmap/morentouxiang" />
+
+        <RelativeLayout
+            android:layout_marginLeft="20dp"
+            android:paddingTop="@dimen/dp_8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/user_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:text="用户名"
+                android:textColor="#333333"
+                android:textSize="@dimen/size_16" />
+
+            <TextView
+                android:id="@+id/user_job"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/user_name"
+                android:layout_toRightOf="@id/user_name"
+                android:layout_marginLeft="28dp"
+                android:text="医生"
+                android:textColor="#009999"
+                android:textSize="@dimen/size_normal" />
+
+
+
+            <TextView
+                android:id="@+id/user_level"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/user_name"
+                android:layout_marginTop="@dimen/dp_16"
+                android:text="VIP"
+                android:textColor="#ff5454"
+                android:textSize="@dimen/size_normal" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:background="#273238"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/note"
+            style="@style/SettingLayout">
+
+            <ImageView
+                style="@style/SettingIcon"
+                android:src="@mipmap/wodebiji" />
+
+            <TextView
+                style="@style/SettingText"
+                android:text="我的笔记"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/follow"
+            style="@style/SettingLayout">
+
+            <ImageView
+                style="@style/SettingIcon"
+                android:src="@mipmap/wodeguanzhu" />
+
+            <TextView
+                style="@style/SettingText"
+                android:text="我的关注"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/collection"
+            style="@style/SettingLayout">
+
+            <ImageView
+                style="@style/SettingIcon"
+                android:src="@mipmap/wodeshoucang" />
+
+            <TextView
+                style="@style/SettingText"
+                android:text="我的收藏"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/history"
+            style="@style/SettingLayout">
+
+            <ImageView
+                style="@style/SettingIcon"
+                android:src="@mipmap/yuedulishi" />
+
+            <TextView
+                style="@style/SettingText"
+                android:text="阅读历史"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/error"
+            style="@style/SettingLayout">
+
+            <ImageView
+                style="@style/SettingIcon"
+                android:src="@mipmap/wodejiucuo" />
+
+            <TextView
+                style="@style/SettingText"
+                android:text="我的纠错"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/comment"
+            style="@style/SettingLayout">
+
+            <ImageView
+                style="@style/SettingIcon"
+                android:src="@mipmap/wodepinglun" />
+
+            <TextView
+                android:text="我的评论"
+                style="@style/SettingText"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/partner"
+            style="@style/SettingLayout">
+
+            <ImageView
+                style="@style/SettingIcon"
+                android:src="@mipmap/wodetonghang" />
+
+            <TextView
+                android:text="我的同行"
+                style="@style/SettingText"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/about"
+            style="@style/SettingLayout">
+
+            <ImageView
+                style="@style/SettingIcon"
+                android:src="@mipmap/guanyu" />
+
+            <TextView
+                style="@style/SettingText"
+                android:text="关于        "/>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/setting"
+                android:drawableLeft="@mipmap/shezhi"
+                android:drawablePadding="@dimen/dp_12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="60dp"
+                android:text="设置"
+                android:textColor="#FFFFFF"
+                android:textSize="@dimen/size_normal" />
+            <TextView
+                android:id="@+id/message"
+                android:drawableLeft="@mipmap/xiaoxi"
+                android:drawablePadding="@dimen/dp_12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="60dp"
+                android:text="消息"
+                android:textColor="#FFFFFF"
+                android:textSize="@dimen/size_normal" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>
